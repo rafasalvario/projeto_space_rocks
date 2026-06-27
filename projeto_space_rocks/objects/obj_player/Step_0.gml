@@ -21,3 +21,8 @@ if keyboard_check(vk_right) //se segurar pra direita
 
 
 move_wrap(true, true, 0) //função para a nave atravessar um lado e sair no outro e vice-versa
+
+if mouse_check_button_pressed(mb_left)  //quando apertar o botão esquerdo do mouse; pressed roda uma vez só
+{
+	instance_create_layer(x,y,"Instances",obj_bullet); 	//vai criar um layer que é o objeto obj_bullet	
+}
